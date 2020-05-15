@@ -1,93 +1,67 @@
-#
-# 这个文档包含了本博客的设定信息，你可以编辑它来个性化自己的博客，
-#
-
-# 你的博客名称，请用你想要的博客名替换“LOFFER”，以下修改都可类似处理
-# 注意，“name: LOFFER”，冒号后面的空格不可以省略。
-# 井号后面的文字是说明文档，不会被程序读取。
-
-# 描述/签名
-name: LOFFER
-description: 一个可以fork的博客
-
-# 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
+name: LJP-TW
+description: 哈囉，你好。
 url: 
-
-# 添加你的博客的二级域名，一般来说是你的repository名
-# 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
-# 那么就写成 "/repository-name"
-baseurl: /LOFFER
-
+baseurl: /blog
 
 #
-# 下面的设定都是可选的
+# 以下為可選設定
 #
 
-# 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+# Logo 圖片連結，盡量不要超過 300px × 300px
+# avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+avatar: https://avatars3.githubusercontent.com/u/26863912?s=460&u=b7dd5d6a3c05794d4fc7b6e1099311edc0b83c4d&v=4
 
-# 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+# favicon 圖片連結，盡量不要超過 64px × 64px
+# favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+favicon: https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_L_blue-512.png
 
-
-# 菜单中的按钮
+# 選單
 navigation:
-  - name: 首页
+  - name: 首頁
     url: /
-  - name: 关于
+  - name: 關於
     url: /about
-  - name: 归档
+  - name: 文章
     url: /archive
-  - name: 标签
+  - name: 標籤
     url: /tags
 
-# 每页的文章数
-paginate: 8
+# 每頁的文章數
+paginate: 3
 
-# 文章简介的区分标记
+# 文章簡介的區分標記
 excerpt_separator: <!-- more -->
 
-# 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
+# 社群帳號連結
 footer-links: 
-  weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
+  weibo: # frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<>
   dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
-  facebook: #https://www.facebook.com/<>
-  flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
-  instagram: #https://instagram.com/<>
-  linkedin: #https://www.linkedin.com/in/<>
-  pinterest: #https://www.pinterest.com/<>
-  rss: #随便填点啥RSS就能用了
+  email: accr94238@gmail.com 
+  facebook: # https://www.facebook.com/<>
+  flickr: # https://www.flickr.com/<>
+  github: LJP-TW
+  instagram: # https://instagram.com/<>
+  linkedin: # https://www.linkedin.com/in/<>
+  pinterest: # https://www.pinterest.com/<>
+  rss: #
   stackoverflow: # http://stackoverflow.com/<>
   tumblr: # https://<username>.tumblr.com
   twitter: # https://www.twitter.com/<your_twitter_username> 
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UCVwGnwU1Tg80B0i_ARBH0Sw
 
-# 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
-
-#
-# 评论，注意，请不要同时添加多种不同的评论区
-#
-
-# 输入Disqus shortname，即可添加评论区
-disqus: loffer #shortname
-
-# 输入Gitalk相关设定，即可添加评论区，具体请看教程
-gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
-
-# 输入Google Analytics web tracking code
-google_analytics:
-
+# 頁腳文字
+footer-text: glhf
 
 #
-# !! 以下所有设置都不需要更改 !!
+# 評論區
+#
+
+# 輸入 Disqus shortname，即可添加評論區
+disqus: ljp-tw
+
+#
+# 以下所有設置都不需要更改
 #
 
 permalink: /:title/
