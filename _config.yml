@@ -8,12 +8,10 @@ baseurl: /blog
 #
 
 # Logo 圖片連結，盡量不要超過 300px × 300px
-# avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
 avatar: https://avatars3.githubusercontent.com/u/26863912?s=460&u=b7dd5d6a3c05794d4fc7b6e1099311edc0b83c4d&v=4
 
 # favicon 圖片連結，盡量不要超過 64px × 64px
-# favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
-favicon: https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_L_blue-512.png
+favicon: https://github.com/LJP-TW/blog/blob/master/images/favicon.png
 
 # 選單
 navigation:
