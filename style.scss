@@ -319,8 +319,37 @@ img {
 // .sidebar
 //
 
+.wrapper-sidebar-toggle {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 2px solid #000;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #000;
+  text-align: center;
+  line-height: 1.3rem;
+  z-index: 30;
+  cursor: pointer;
+  
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+
+  @include mobile {
+    left: unset;
+    right: 1rem;
+  }
+}
+
+.wrapper-sidebar-toggle:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .wrapper-sidebar {
-  width: 30%;
+  width: 25%;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: $background-color;
@@ -331,13 +360,110 @@ img {
 	z-index: 4;
   border-right: 1px solid $divider-color;
 
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+
   @include mobile {
+    float: none;
     width: 100%;
     height: auto;
     padding-bottom: 24px;
     position: relative;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
+  }
+}
+
+#wrapper-sidebar-toggle-cb {
+  display: none;
+}
+
+#wrapper-sidebar-toggle-cb:checked ~ .wrapper-sidebar {
+  width: 25%;
+  overflow: hidden;
+
+  -moz-animation: slide-horizon-out 0.7s ease 0s forwards;
+  -webkit-animation: slide-horizon-out 0.7s ease 0s forwards;
+  -o-animation: slide-horizon-out 0.7s ease 0s forwards;
+  -ms-animation: slide-horizon-out 0.7s ease 0s forwards;
+  animation: slide-horizon-out 0.7s ease 0s forwards;
+
+  @include mobile {
+    width: 100%;
+    height: auto;
+
+    -moz-animation: slide-vertical-out 0.7s linear 0s forwards;
+    -webkit-animation: slide-vertical-out 0.7s linear 0s forwards;
+    -o-animation: slide-vertical-out 0.7s linear 0s forwards;
+    -ms-animation: slide-vertical-out 0.7s linear 0s forwards;
+    animation: slide-vertical-out 0.7s linear 0s forwards;
+  }
+}
+
+@-moz-keyframes slide-horizon-out /* Firefox */
+{
+  to {width: 0;}
+}
+
+@-webkit-keyframes slide-horizon-out /* Safari and Chrome */
+{
+  to {width: 0;}
+}
+
+@-o-keyframes slide-horizon-out /* Opera */
+{
+  to {width: 0;}
+}
+
+@-ms-keyframes slide-horizon-out /* IE10 */
+{
+  to {width: 0;}
+}
+
+@keyframes slide-horizon-out
+{
+  to {width: 0;}
+}
+
+@-moz-keyframes slide-vertical-out /* Firefox */
+{
+  to {
+    height: 0; 
+    padding-bottom: 0;
+  }
+}
+
+@-webkit-keyframes slide-vertical-out /* Safari and Chrome */
+{
+  to {
+    height: 0; 
+    padding-bottom: 0;
+  }
+}
+
+@-o-keyframes slide-vertical-out /* Opera */
+{
+  to {
+    height: 0; 
+    padding-bottom: 0;
+  }
+}
+
+@-ms-keyframes slide-vertical-out /* IE10 */
+{
+  to {
+    height: 0; 
+    padding-bottom: 0;
+  }
+}
+
+@keyframes slide-vertical-out
+{
+  to {
+    height: 0; 
+    padding-bottom: 0;
   }
 }
 
@@ -540,7 +666,7 @@ nav {
   overflow-y: auto;
   
   &:before{
-    content:"目录";
+    content:"目錄";
     margin: 0 0 1em 1em;
     font-weight: 700;
     font-size: 1.2em;
