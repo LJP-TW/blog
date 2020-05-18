@@ -118,7 +118,7 @@ GET_FARVAR 是 MAKE_FLATPTR 的 Wrapper，而 MAKE_FLATPTR 是將 Real mode 下�
 #define MAKE_FLATPTR(seg,off) ((void*)(((u32)(seg)<<4)+(u32)(off)))
 ```
 
-而 FUNC16 定義請看 [General Macro 解釋](#General-Macro-解釋)
+而 FUNC16 定義請看 [General Macro](#general-macro)
 
 ivt_init() 的技術總結就是
 - IVT 位置從 Memory 0x00000000 開始，想成是一個 Array
