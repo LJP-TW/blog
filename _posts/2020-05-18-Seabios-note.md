@@ -5,6 +5,7 @@ date: 2020-05-18
 Author: LJP-TW
 tags: [BIOS]
 comments: true
+toc: true
 ---
 # Intro
 分析 [seabios](https://github.com/qemu/seabios) 的實作
