@@ -7,9 +7,7 @@ tags: [.NET]
 comments: true
 ---
 
-# .NET 筆記
-
-## 概述
+# 概述
 
 先簡單有個概念，來個 wiki 上的圖
 
@@ -73,7 +71,7 @@ comments: true
 
 這部分先開一個 PE format 的坑，以後寫文章來記錄
 
-## JIT (Just-In-Time)
+# JIT (Just-In-Time)
 
 而 JIT 的概念可以看看 [JIT 在 Javascript Engine 的應用](https://slidrio-decks.global.ssl.fastly.net/1526/original.pdf?1550748193)
 
@@ -89,7 +87,7 @@ comments: true
 
 上面是 JIT 的概念，而 JIT 在 CLR 做的事情可以看參考資料 9
 
-## C++/CLI
+# C++/CLI
 來簡單寫一個 [C++/CLI ](https://zh.wikipedia.org/wiki/C%2B%2B/CLI) 的 hello world，並且觀察產生的 exe
 
 首先，開一個熟悉的 C++ 專案
@@ -301,12 +299,12 @@ int main()
 
 dnSpy 的功能非常強大，這邊開一個坑，之後有機會寫文章介紹實際使用過程
 
-## 後記
+# 後記
 這份筆記寫得有點雜亂，雖然叫做 .NET 筆記，但寫完後才發現講的東西好像都是 CIL 跟 CLR，之後有機會再擴充/修訂這篇筆記
 
 原本只是想為最近 CTF 中遇到 .NET 惡意程式寫篇 write-up，但其實自己對於 .NET 可以說是沒有任何基礎知識，就先寫了這篇，寫完後果然學到不少東西
 
-## 參考資料
+# 參考資料
 1. [MSDN .NET 框架概述](https://docs.microsoft.com/zh-tw/dotnet/framework/get-started/overview)
 2. [wiki .NET](https://zh.wikipedia.org/wiki/.NET%E6%A1%86%E6%9E%B6)
 3. [簡介C#編譯成IL，再由JIT編譯成機器碼的過程](https://ithelp.ithome.com.tw/articles/10219630)
