@@ -321,14 +321,14 @@ img {
 
 .wrapper-sidebar {
   width: 30%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-color: $background-color;
-	height: 100%;
-	top: 0;
-	left:0;
-	position: fixed;
-	z-index: 4;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: $background-color;
+  height: 100%;
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: 4;
   border-right: 1px solid $divider-color;
 
   @include mobile {
@@ -351,7 +351,7 @@ img {
 
 .site-info {
   text-align:center;
-  margin: 100px auto 0;
+  margin: 70px auto 0;
 
   @include mobile {
     float: none;
@@ -529,6 +529,61 @@ nav {
 }
 
 // TOC
+
+.mytoc {
+  width: 80%;
+  height: 35%;
+  margin-left: 10%;
+  margin-top: 23px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+
+  li:before{
+    content:"";
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.mytoc_title
+{
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+
+  &:before{
+    content:"目錄";
+    margin: 0 0 1em 1em;
+    font-weight: 700;
+    font-size: 1.2em;
+    display: block;
+    padding-bottom: 0.6em;
+    border-bottom: 3px double $divider-color;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.mytoc::-webkit-scrollbar-track
+{
+  background-color: $background-color;
+}
+
+.mytoc::-webkit-scrollbar
+{
+  width: 2px;
+  background-color: $background-color;
+}
+
+.mytoc::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
 
 .toc {
   width: 240px;

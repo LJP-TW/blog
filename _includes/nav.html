@@ -17,6 +17,16 @@
       {% endfor %}
     </nav>
   </div>
+  
+  {% if page.toc==true %}
+  <div class="mytoc_title"></div>
+  <div class="mytoc">
+      <aside class="">
+        {% include toc.html html=content %}
+      </aside>
+  </div>
+  {% endif %}
+
 
   <div class="wrapper-footer-desktop">
     <footer class="footer">
