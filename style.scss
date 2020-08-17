@@ -23,6 +23,11 @@ body {
   font-family: $base-font;
   color: $base-color;
   line-height: 1.7em;
+
+  &:after {
+    display: none;
+    content: url("/blog/images/nav.jpg");
+  }
 }
 
 .container {
@@ -227,7 +232,7 @@ blockquote {
   border-left: .2em solid $blockquote-border-color;
 
   p {
-    color: $blockquote-color;
+    color: $oc-gray-6;
   }
 
   p:last-child {
@@ -316,6 +321,64 @@ img {
 /*********************/
 
 //
+// animation
+//
+.spinner {
+  margin: 50% auto 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+  transform-origin: 50% 60%;
+  transform: perspective(200px) rotateX(66deg);
+  animation: spinner-wiggle 1.2s infinite;
+}
+.spinner:before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  margin: -4px;
+  box-sizing: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  opacity: .05;
+  border: inherit;
+  border-color: transparent;
+  animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
+}
+
+.spinner:before {
+  border-top-color: #66e6ff;
+}
+
+.spinner:after {
+  border-top-color: #f0db75;
+  animation-delay: 0.3s;
+}
+
+@keyframes spinner-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-fade {
+  20% {
+    opacity: .1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: .1;
+  }
+}
+
+//
 // .sidebar
 //
 
@@ -324,6 +387,8 @@ img {
   -webkit-background-size: cover;
   background-size: cover;
   background-color: $background-color;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/blog/images/nav.jpg");
+  background-position: center top;
   height: 100%;
   top: 0;
   left:0;
@@ -338,6 +403,23 @@ img {
     position: relative;
     border-bottom: 1px solid $divider-color;
     border-right: 0;
+  }
+}
+
+.wrapper-sidebar-cover {
+  width: 30%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: $oc-gray-9;
+  height: 100%;
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: 5;
+  border-right: 1px solid $divider-color;
+
+  @include mobile {
+      display: none;
   }
 }
 
@@ -379,18 +461,18 @@ img {
 
 .site-name {
   margin: 0 auto;
-  color: $base-color;
+  color: $base-lighten-color;
   cursor: pointer;
   font-family: $base-font;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: 15px auto;
   color: $base-lighten-color;
-  font-size: 16px;
+  font-size: 20px;
 
   @include mobile {
     margin: 10px auto;
@@ -418,6 +500,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    color: $base-lighten-color;
 
     @include mobile {
       margin: 0 10px;
@@ -492,7 +575,7 @@ nav {
 .date {
   font-weight: 300;
   font-size: $small-font-size;
-  color: $base-lighten-color;
+  color: $oc-gray-6;
   margin-right: 4px;
 }
 
@@ -521,10 +604,10 @@ nav {
 }
 
 .page {
-//  margin: 40px;
+  margin: 40px;
 
   @include mobile {
-//    margin: 24px;
+    margin: 24px;
   }
 }
 
@@ -538,9 +621,12 @@ nav {
   overflow-y: auto;
   overflow-x: hidden;
 
-
   li:before{
     content:"";
+  }
+
+  a {
+    color: $base-lighten-color;
   }
 
   @include mobile {
@@ -557,6 +643,7 @@ nav {
   &:before{
     content:"目錄";
     margin: 0 0 1em 1em;
+    color: $base-lighten-color;
     font-weight: 700;
     font-size: 1.2em;
     display: block;
@@ -637,13 +724,13 @@ nav {
     float: left;
     width: 50%;
     a {
-      color: $base-lighten-color;
+      color: $oc-gray-8;
       border: 1px solid $divider-color;
       padding: 10px 20px;
       background: $background-color;
 
       &:hover, &:focus {
-        color: $link-lighten-color;
+        color: $oc-gray-9;
         border: 1px solid $link-lighten-color;
         background-color: $link-bghv-color;
       }
@@ -655,13 +742,13 @@ nav {
     text-align: right;
     width: 50%;
     a {
-      color: $base-lighten-color;
+      color: $oc-gray-8;
       border: 1px solid $divider-color;
       padding: 10px 20px;
       background: $background-color;
 
       &:hover, &:focus {
-        color: $link-lighten-color;
+        color: $oc-gray-9;
         border: 1px solid $link-lighten-color;
         background-color: $link-bghv-color;
       }
@@ -675,7 +762,7 @@ nav {
     color: $base-color;
   }
   time {
-    color: $base-lighten-color;
+    color: $oc-gray-6;
     font-size: $small-font-size;
     font-weight: 300;
     margin-left: 3px;
@@ -724,7 +811,7 @@ nav {
     color: $base-color;
   }
   time {
-    color: $base-lighten-color;
+    color: $oc-gray-6;
     font-size: $small-font-size;
     font-weight: 300;
     margin-left: 3px;
@@ -736,8 +823,8 @@ nav {
 // Footer
 .wrapper-footer-desktop {
   margin-top: 50px;
-  border-top: 1px solid $footer-border-color;
-  background-color: $footer-background-color;
+  // border-top: 1px solid $footer-border-color;
+  // background-color: $footer-background-color;
   position: absolute;
   clear:both;
   width:100%;
