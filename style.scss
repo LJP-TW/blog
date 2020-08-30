@@ -19,6 +19,22 @@ html {
   font-size: $base-font-size;
 }
 
+html::-webkit-scrollbar-track
+{
+  background-color: $background-color;
+}
+
+html::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: $background-color;
+}
+
+html::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+
 body {
   font-family: $base-font;
   color: $base-color;
