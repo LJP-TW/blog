@@ -6,6 +6,7 @@ Author: LJP-TW
 tags: [.NET]
 comments: true
 toc: true
+excerpt_separator: <!--more-->
 ---
 
 # 概述
@@ -33,6 +34,7 @@ toc: true
 
 從 Managed code 呼叫 Unmanaged libraries 需要用到 [`P/invoke` 技術](https://docs.microsoft.com/zh-tw/dotnet/standard/native-interop/pinvoke)，這邊的技術細節先挖一個坑，之後另外寫文章說明
 
+<!--more-->
 
 參考資料 3 中提到
 

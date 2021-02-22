@@ -5,6 +5,7 @@ date: 2020-11-19
 Author: LJP-TW
 tags: [Reverse]
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 紀錄一下遇到的問題：IDA 解析區域變數 offset 錯誤
@@ -22,6 +23,8 @@ comments: true
 ![](/blog/images/post/2020-11-19-bp-based-frame/2.png)
 
 # 解法
+
+<!--more-->
 
 在 function scope 中按下 `Alt` + `P` 編輯函數屬性
 

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: ASIS 2020 Shared House Write-up
+title: 2020 ASIS Shared House Write-up
 date: 2020-08-16
 Author: LJP-TW
 tags: [CTF]
 comments: true
 toc: true
+excerpt_separator: <!--more-->
 ---
 
 # 前言
@@ -18,6 +19,8 @@ toc: true
 這篇文除了解釋題目跟紀錄解題過程之外, 還會紀錄跟工具相關的部份, 希望對跟我一樣的新手有幫助 :)
 
 * 如果完全沒寫過 kernel module, 可以先去寫一個簡單的東東來玩看看再回來
+
+<!--more-->
 
 # 題目介紹
 題目給了

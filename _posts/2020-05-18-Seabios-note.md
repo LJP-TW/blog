@@ -6,6 +6,7 @@ Author: LJP-TW
 tags: [BIOS]
 comments: true
 toc: true
+excerpt_separator: <!--more-->
 ---
 # Intro
 分析 [seabios](https://github.com/qemu/seabios) 的實作
@@ -29,6 +30,8 @@ toc: true
 
 # Interrupt Vector Table
 在 interface_init() 中呼叫到 ivt_init() 進行 IVT 初始化
+
+<!--more-->
 
 ```c
     // Initialize all vectors to the default handler.

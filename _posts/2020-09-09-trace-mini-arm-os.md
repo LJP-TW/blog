@@ -6,6 +6,7 @@ Author: LJP-TW
 tags: [OS, Arm]
 comments: true
 toc: true
+excerpt_separator: <!--more-->
 ---
 
 # Intro
@@ -18,6 +19,8 @@ toc: true
         - CPU: STM32F103RBT6 ARM 32 bit CORTEX M3
 - [stm32f103xx manual](https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)
     - 開發板上的 CPU 開發手冊, 主要會一直來查這邊
+
+<!--more-->
 
 # 00-HelloWorld
 ## Makefile
