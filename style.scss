@@ -17,6 +17,7 @@
 
 html {
   font-size: $base-font-size;
+  background: $background-color;
 }
 
 html::-webkit-scrollbar-track
@@ -32,7 +33,7 @@ html::-webkit-scrollbar
 
 html::-webkit-scrollbar-thumb
 {
-  background-color: #000000;
+  background-color: $base-color;
 }
 
 body {
@@ -426,7 +427,7 @@ img {
   width: 30%;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: $oc-gray-9;
+  background-color: $background-color;
   height: 100%;
   top: 0;
   left:0;
@@ -530,6 +531,7 @@ nav {
 .wrapper-content {
   float: right;
   width: 70%;
+  background: $background-color;
 
   @include mobile {
     float: none;
@@ -557,7 +559,7 @@ nav {
       > a {
         margin: 3px 3px 3px 0;
         padding: .5px 4px;
-        color: $base-color;
+        color: $tag-color;
         background-color: $tag-index-label-background-color;
         border-radius: 3px;
 
@@ -571,13 +573,19 @@ nav {
 }
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $divider-color;
+  // padding-bottom: 2em;
+  border: 1px solid $background-color;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 18px #d8d8d8;
+  // border-bottom: 1px solid $divider-color;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+  // padding-bottom: 1em;
+  // border-bottom: none;
 }
 
 
@@ -725,7 +733,7 @@ nav {
 // pagination
 
 .pagination {
-  border-top: 1px solid $divider-color;
+  // border-top: 1px solid $divider-color;
   font-weight: 300;
   padding: 40px 0;
   width: 100%;
@@ -743,7 +751,7 @@ nav {
       color: $oc-gray-8;
       border: 1px solid $divider-color;
       padding: 10px 20px;
-      background: $background-color;
+      background: $link-bg-color;
 
       &:hover, &:focus {
         color: $oc-gray-9;
@@ -761,7 +769,7 @@ nav {
       color: $oc-gray-8;
       border: 1px solid $divider-color;
       padding: 10px 20px;
-      background: $background-color;
+      background: $link-bg-color;
 
       &:hover, &:focus {
         color: $oc-gray-9;
@@ -800,7 +808,7 @@ nav {
     > a {
       display: inline-block;
       margin: 1px;
-      color: $base-color;
+      color: $tag-color;
       background-color: $tag-index-label-background-color;
       border-radius: 3px;
 
