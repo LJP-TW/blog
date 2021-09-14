@@ -628,10 +628,17 @@ nav {
 }
 
 .page {
-  margin: 40px;
+  // margin: 40px;
+
+  border: 1px solid $background-color;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 18px #d8d8d8;
 
   @include mobile {
-    margin: 24px;
+    // margin: 24px;
   }
 }
 
