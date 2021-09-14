@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 
 # 前言
 
-練習了一下如何 bypass SMEP，這題的漏洞很好利用，很適合拿來練習利用手段。
+練習了一下如何 bypass SMAP+SMEP，這題的漏洞很好利用，很適合拿來練習利用手段。
 <!--more-->
 
 # 題目介紹
