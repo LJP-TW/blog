@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2021 AIS3 EOF 初賽 Write-up
+title: 2020 AIS3 EOF 初賽 Write-up
 date: 2021-01-11
 Author: LJP-TW
 tags: [CTF]
